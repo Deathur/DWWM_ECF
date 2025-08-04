@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    background-color: gray;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.headerMenu ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-auto-rows: auto;
+    justify-content: center;
+}
