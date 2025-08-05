@@ -2,9 +2,9 @@
     <p>Artisan Local</p>
     <nav class="headerMenu">
         <ul>
-            <li>Accueil</li>
-            <li>Prestation</li>
-            <li>Contactez-nous</li>
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="index.php">Prestation</a></li>
+            <li><a href="index.php">Contactez-nous</a></li>
         </ul>
     </nav>
 </div>
