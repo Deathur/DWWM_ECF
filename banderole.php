@@ -1,18 +1,22 @@
-<div class="banderole">
-    <div class="marque">
-        <h2>Nom de la marque</h2>
-        <p>Presentation de la marque</p>
-    </div>
-    <div class="presta presta1">
-        <h2>Presta 1</h2>
-        <p>Presentation de la presta 1</p>
-    </div>
-    <div class="presta presta2">
-        <h2>Presta 2</h2>
-        <p>Presentation de la presta 2</p>
-    </div>
-    <div class="presta presta3">
-        <h2>Presta 3</h2>
-        <p>Presentation de la presta 3</p>
-    </div>
-</div>
+<?php
+    $sqlPresta = "SELECT * FROM `prestation`";
+    $stmtPresta = $pdo->prepare($sqlPresta);
+    $stmtPresta->execute();
+    $resultsPresta = $stmtPresta->fetchAll(PDO::FETCH_ASSOC);
+    echo "<div class=prestation>";
+        foreach ($resultsPresta as $key => $value){
+            echo "<div class=cellPrestation>";
+            foreach($value as $key2=>$value2){
+                if ($key2 == 'nom_Prestation'){
+                    $nomTempo = $value2;
+                }
+                if($key2 == 'description_Prestation'){
+                    $descTempo =  $value2;
+                }
+                echo '<br>';
+            }
+            echo $nomTempo.': '.$descTempo;
+            echo '</div>';
+        }
+        echo '</div><hr>';
+?>

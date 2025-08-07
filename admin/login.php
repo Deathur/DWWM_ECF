@@ -1,18 +1,4 @@
-<?php
-    $host = 'localhost';
-    $dbname = 'dwwm_ecf';
-    $user = 'root';
-    $password = '';
 
-    try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $password);
-    // Active les erreurs PDO en exception
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "<script>console.log('Connexion réussi !');</script>";
-    } catch (PDOException $e) {
-        echo "Erreur de connexion : " . $e->getMessage();
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
