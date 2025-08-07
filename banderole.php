@@ -16,7 +16,7 @@
                 echo '<br>';
             }
             echo $nomTempo.': '.$descTempo;
-            echo '</div>';
+            echo '</div><hr>';
         }
         echo '</div><hr>';
 ?>
