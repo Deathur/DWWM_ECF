@@ -23,7 +23,7 @@
         $uploaddir = '../uploads/';
         $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
         $filename = basename($_FILES['userfile']['name']);
-        $sqlAddImage = "INSERT INTO `gallery`(`lien_Gallery`, `legende_Gallery`) VALUES ('$legende','$filename')";
+        $sqlAddImage = "INSERT INTO `gallery`(`lien_Gallery`, `legende_Gallery`) VALUES ('$filename','$legende')";
         $stmtAddImage = $pdo->prepare($sqlAddImage);
         $stmtAddImage->execute();
 

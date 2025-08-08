@@ -1,4 +1,7 @@
-.header {
+:root {
+    --espacegrid: 10px;
+}
+.header, .footer {
     display: flex;
     background-color: gray;
     flex-direction: row;
@@ -10,20 +13,38 @@
     list-style: none;
     gap: 10px;
 }
+.prestation {
+    background-color: rgb(116, 116, 116);
+    color: white;
+    text-align: center;
+}
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(3, auto);
+    gap: var(--espacegrid);
+    padding-top: var(--espacegrid);
+    padding-right: var(--espacegrid);
+    padding-left: var(--espacegrid);
+    padding-bottom: var(--espacegrid);
     grid-auto-rows: auto;
-    justify-content: center;
 }
-.container {
+.cellGallery {
     position: relative;
     text-align: center;
 }
-.centered {
+.gallery > div > img {
+    max-width: auto;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.textGallery {
     position: absolute;
     top: 50%;
     left: 50%;
     font-size: 24px;
     transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-shadow: 4px 4px 24px rgba(0,0,0,0.64);
 }

@@ -33,7 +33,6 @@
             <?php
             include_once "banderole.php";
             include_once "gallery.php";
-            echo '<br>';
             ?>           
         </main>
         <footer>
