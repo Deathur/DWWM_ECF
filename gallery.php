@@ -7,12 +7,9 @@
         foreach ($resultsGallery as $key => $value){
             echo "<div class=cellGallery>";
             foreach($value as $key2=>$value2){
-                if ($key2 == 'lien_Gallery'){
-                    $lienGallery = $value2;
-                }
-                if($key2 == 'legende_Gallery'){
-                    $legendeGallery =  $value2;
-                }
+                echo '
+                
+                ';
                 echo '<br>';
             }
             echo $lienGallery.': '.$legendeGallery;

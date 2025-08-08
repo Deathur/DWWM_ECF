@@ -33,12 +33,8 @@
             <?php
             include_once "banderole.php";
             include_once "gallery.php";
-            
-            
-            
-            
-            ?>
-            
+            echo '<br>';
+            ?>           
         </main>
         <footer>
             <?php
@@ -49,21 +45,9 @@
     </body>
 </html>
 <?php
+
 /*
-$folderPath = "assets/images/";
-$totalFiles = glob($folderPath . "*");
-var_dump($totalFiles);
-$countFile = count($totalFiles);
-echo $countFile;
 
-if (isset($_POST['fileSubmit'])){
-                var_dump($_POST['file']);
-            }
-
-<form method="POST">
-                <input type="file" name="file">
-                <input type="submit" name="fileSubmit" value="Test">
-            </form>
 */
 
 ?>

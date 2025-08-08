@@ -16,3 +16,14 @@
     grid-auto-rows: auto;
     justify-content: center;
 }
+.container {
+    position: relative;
+    text-align: center;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%);
+}
